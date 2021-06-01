@@ -1,0 +1,152 @@
+
+# Object Serialization:(Marshaling,Pickling)
+
+                - Serialization is the process of converting an object in memory into a stream of bytes
+                  like store it on disk or send it over the network.
+              
+                - In simple word The conversion of python supported form into file supported form is nothing but serialization
+
+
+
+
+       example  -ATM: When the account holder tries to withdraw money from the server through ATM, 
+                 the account holder information like withdrawal details will be serialized
+                 and sent to the server where the details are deserialized and used to perform operations.
+
+
+
+
+
+
+
+
+# Object Deserialization:(Unmarshaling,Unpickling)
+
+
+                - Deserialization is the exact opposite - Fetch a stream of bytes from network or persistence storage 
+                  and convert it back to the Object with the same state.
+              
+                - An object from file supported form into python supported form this reverse process is called as Deserialization.
+
+
+
+
+
+
+
+
+# pickle module:
+
+                 - If you want save an object to the file and read an object to the file then pickle module concept is we required.
+
+                 
+
+
+
+
+
+
+
+# Object serialization using pickle module:
+
+                  - We can perform serialization and deserialization of an object with respect to file by using pickle module.
+                  - It is pythons inbuilt module.
+                  - Pikcle module contains dump() function to perform serialization.(Pickling)
+        
+
+        syntax :   pickle.dump(object,file)
+
+            
+
+
+
+                   - Pickle module contains load() fumction to perform deserialization.(Unpickling)
+
+
+        Syntax :   object=pickle.load(file)
+
+
+
+
+
+# Why we need serialization and Deserialization:
+
+
+                             - When we stored structured data in the file and want to perform some calculations
+                               that time we need serialization and deserialization. 
+
+
+
+
+
+
+
+
+
+# Json module: 
+         
+               - As the part of programming it is very common requirement to convert python object into json form
+                 and json form into python object,For these conversions(Serialization & Deserialization) python provide inbuilt json module.
+
+
+              - Json module defines multiple function to seriallization and deserializaton.
+
+
+
+
+
+
+              dump():
+
+                    - If you want to serialize python dict object to json (into file object) then we required to go for dump().
+           
+              load():
+                    
+                    - If you deserialize file object( json object) to python dict object the we required load() function.
+
+
+
+
+             dumps():
+
+                    - If you want to serialize python dict object to json string then we required to go for dumps(). (i.e Serialize to string)
+               
+
+              loads():
+
+                    - If you want to deserialize json strings to python dict object then we required to loads()
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
